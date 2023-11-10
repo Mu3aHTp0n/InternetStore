@@ -11,19 +11,16 @@ a {
 body{
     background: #000;
 }
-/* h3 {
-    color: #F5F5F5;
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    padding: 28px 0 0;
-} */
+
 .header__container {
     padding: 15px 100px;
 }
 .header {
     font: 36px sans-serif;
     background: #FFF;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #000;
 }
 .navigation {
     display: flex;
@@ -40,32 +37,15 @@ body{
 
 
 .header-logo__container {
-
-}
-.header-line {
-    height: 2px;
-    width: 50%;
-    margin: 2px;
-    background-color: #000;
-    border: none;
-}
-.header-line-top {
-    display: flex;
-}
-.header-line-bottom {
     
 }
-.header-line1 {
-}
-.header-line2 {
-}
-.header-line3 {
-}
-.header-line4 {
-}
+
 
 .header__list {
     list-style: none;
+}
+.header__list:last-child {
+    color: #000;
 }
 .list__item {
     display: inline-block;
@@ -87,13 +67,29 @@ body{
 }
 
 .sidebar {
+    position: sticky;
+    height: 65vh;
+    top: 215px;
     background: #FFF;
     padding: 10px;
     border-radius: 8px;
 }
+.sidebar__title {
+    margin-bottom: 15px;
+}
+.sort-container{
+    margin: 30px 0;
+}
+.sort__item {
+    margin-bottom: 15px;
+}
+.sort__title{
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: #F00;
+}
 .button-container {
-    position: relative;
-    top: 90%;
+    position: ;
 }
 .sidebar__button {
     padding: 15px;
