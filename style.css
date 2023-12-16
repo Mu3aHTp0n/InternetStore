@@ -96,13 +96,26 @@ body{
     margin-top: 20px;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
 }
 .book {
     border-radius: 8px;
     background: #FFF;
     padding: 10px 25px;
 }
+
+.addBook {
+    width: 250px;
+    height: 366px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(43,120,12);
+    background: radial-gradient(circle, rgba(43,120,12,1) 9%, rgba(87,135,55,1) 55%, rgba(67,153,61,1) 100%);
+    font-size: 32px;
+    color: #FFF;
+}
+
 .book__image {
     width: 200px;
     height: 300px;
